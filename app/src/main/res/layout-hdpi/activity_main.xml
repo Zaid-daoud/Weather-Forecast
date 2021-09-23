@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_gravity="top"
+                android:background="@color/light_blue"
+                android:elevation="10dp"
+                app:title="@string/app_name"
+                app:titleTextColor="@color/white"
+                app:menu="@menu/delete_all"/>
+
+            <EditText
+                android:id="@+id/cityNameET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/city_name_et_height"
+                android:layout_gravity="center"
+                android:background="@drawable/city_name_edit_text"
+                android:hint="@string/edit_text_hint"
+                android:inputType="text"
+                android:layout_margin="15dp"
+                android:paddingStart="15dp"
+                android:textSize="@dimen/city_name_et_size" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/citiesRV" />
+
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/add_city"
+            android:outlineSpotShadowColor="@color/white"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/white"
+            app:backgroundTint="@color/light_blue"
+            app:borderWidth="5dp"
+            app:elevation="30dp"
+            app:fabSize="mini" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

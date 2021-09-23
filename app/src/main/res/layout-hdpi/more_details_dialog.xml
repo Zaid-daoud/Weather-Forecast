@@ -1,0 +1,290 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:cardBackgroundColor="@color/light_blue"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:elevation="2dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/list_item_remove"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_close"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/closeDialog" />
+
+                <ImageView
+                    android:layout_width="@dimen/details_condition_icon"
+                    android:layout_height="@dimen/details_condition_icon"
+                    android:src="@drawable/ic_condition"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:id="@+id/condition_image" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date   :"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunrise   :"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/sunrise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunset    :"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/sunset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max temperature   :"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/max_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average temperature:"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/avg_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min temperature   :"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/min_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/details_padding"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max wind speed   :"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/max_wind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM"
+                        android:textColor="@color/white"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dialog_text_size_small"
+                        android:maxLines="1"
+                        android:overScrollMode="always"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</layout>

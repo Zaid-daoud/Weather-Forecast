@@ -1,0 +1,490 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/forecast_body_margin_horizontal"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/dark_blue"
+                    app:cardCornerRadius="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/first_day_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/09/2021"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/forecast_header_text"
+                        android:maxLines="1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/light_blue"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="1dp"
+                    android:elevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/first_condition_image"
+                                android:layout_width="@dimen/current_body_image"
+                                android:layout_height="@dimen/current_body_image"
+                                android:src="@drawable/ic_temp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="3dp" />
+
+                            <TextView
+                                android:id="@+id/first_day_temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 C"
+                                android:layout_marginHorizontal="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/current_body_text"
+                                android:textAlignment="center"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/first_day_details_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="more details"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/more_details_text_size"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:paddingVertical="@dimen/current_header_ver_padding"
+                            android:layout_marginVertical="2dp"
+                            android:background="@drawable/more_details_button" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/forecast_body_margin_top"
+                android:layout_marginHorizontal="@dimen/forecast_body_margin_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/dark_blue"
+                    app:cardCornerRadius="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/second_day_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/09/2021"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/forecast_header_text"
+                        android:maxLines="1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/light_blue"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="1dp"
+                    android:elevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/second_condition_image"
+                                android:layout_width="@dimen/current_body_image"
+                                android:layout_height="@dimen/current_body_image"
+                                android:src="@drawable/ic_temp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="3dp" />
+
+                            <TextView
+                                android:id="@+id/second_day_temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 C"
+                                android:layout_marginHorizontal="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/current_body_text"
+                                android:textAlignment="center"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/second_day_details_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="more details"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/more_details_text_size"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:paddingVertical="@dimen/current_header_ver_padding"
+                            android:layout_marginVertical="2dp"
+                            android:background="@drawable/more_details_button" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/forecast_body_margin_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/dark_blue"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fifth_day_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/09/2021"
+                    android:paddingVertical="@dimen/current_header_ver_padding"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/forecast_header_text"
+                    android:maxLines="1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="1dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/current_header_ver_padding"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="5dp">
+
+                        <ImageView
+                            android:id="@+id/fifth_condition_image"
+                            android:layout_width="@dimen/current_body_image"
+                            android:layout_height="@dimen/current_body_image"
+                            android:src="@drawable/ic_temp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.5"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginVertical="3dp" />
+
+                        <TextView
+                            android:id="@+id/fifth_day_temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 C"
+                            android:layout_marginHorizontal="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/current_body_text"
+                            android:textAlignment="center"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fifth_day_details_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="more details"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/more_details_text_size"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:layout_marginVertical="2dp"
+                        android:background="@drawable/more_details_button" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/forecast_body_margin_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/dark_blue"
+                    app:cardCornerRadius="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/third_day_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/09/2021"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/forecast_header_text"
+                        android:maxLines="1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/light_blue"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="1dp"
+                    android:elevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/third_condition_image"
+                                android:layout_width="@dimen/current_body_image"
+                                android:layout_height="@dimen/current_body_image"
+                                android:src="@drawable/ic_temp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="3dp" />
+
+                            <TextView
+                                android:id="@+id/third_day_temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 C"
+                                android:layout_marginHorizontal="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/current_body_text"
+                                android:textAlignment="center"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/third_day_details_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="more details"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/more_details_text_size"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:paddingVertical="@dimen/current_header_ver_padding"
+                            android:layout_marginVertical="2dp"
+                            android:background="@drawable/more_details_button" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/forecast_body_margin_top"
+                android:layout_marginHorizontal="@dimen/forecast_body_margin_horizontal"                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/dark_blue"
+                    app:cardCornerRadius="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fourth_day_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/09/2021"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/forecast_header_text"
+                        android:maxLines="1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/light_blue"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="1dp"
+                    android:elevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/current_header_ver_padding"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginVertical="5dp">
+
+                            <ImageView
+                                android:id="@+id/fourth_condition_image"
+                                android:layout_width="@dimen/current_body_image"
+                                android:layout_height="@dimen/current_body_image"
+                                android:src="@drawable/ic_temp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="3dp" />
+
+                            <TextView
+                                android:id="@+id/fourth_day_temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 C"
+                                android:layout_marginHorizontal="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/current_body_text"
+                                android:textAlignment="center"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/fourth_day_details_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="more details"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/more_details_text_size"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:paddingVertical="@dimen/current_header_ver_padding"
+                            android:layout_marginVertical="2dp"
+                            android:background="@drawable/more_details_button" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

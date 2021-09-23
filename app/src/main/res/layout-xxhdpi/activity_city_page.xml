@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/night_background"
+        tools:context=".ui.view.CityPage">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/refresh">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:layout_gravity="top"
+                    android:background="@color/light_blue"
+                    android:elevation="10dp"
+                    app:navigationIcon="@drawable/ic_back"
+                    app:title="@string/app_name"
+                    app:titleTextColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        app:cardBackgroundColor="@color/dark_blue"
+                        app:cardCornerRadius="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingVertical="@dimen/current_header_ver_padding"
+                            android:text="Today"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/current_header_text" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <include
+                        android:id="@+id/current"
+                        layout="@layout/today_temp_body" />
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginVertical="@dimen/current_header_ver_padding"
+                        android:background="@drawable/between">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Next Five days"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/current_body_text" />
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                    <include
+                        android:id="@+id/forecasts"
+                        layout="@layout/temp_forecast_body" />
+                </LinearLayout>
+            </LinearLayout>
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

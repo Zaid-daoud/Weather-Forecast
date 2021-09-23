@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="add_city">Add another city</string>
+    <string name="newCityHint">city name (Ex: Amman)</string>
+    <string name="check_delete_one">Are you sure that you want to remove this city ?</string>
+    <string name="check_delete_all">Are you sure that you want to remove the cities ?</string>
+    <string name="edit_text_hint">Type the name of the city here</string>
+</resources>

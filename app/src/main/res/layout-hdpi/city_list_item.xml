@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/list_item_padding"
+            android:background="@color/dark_blue"
+            android:id="@+id/background">
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amman"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/list_item_text_size" />
+
+            <ImageView
+                android:id="@+id/remove_city"
+                android:layout_width="@dimen/list_item_remove"
+                android:layout_height="@dimen/list_item_remove"
+                android:src="@drawable/ic_remove"
+                android:layout_gravity="end" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

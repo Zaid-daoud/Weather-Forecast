@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="100dp"
+    android:backgroundTint="@color/light_blue"
+    android:elevation="30dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="@dimen/list_item_remove"
+            android:layout_height="@dimen/list_item_remove"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/add_dialog_margin_top"
+            android:id="@+id/closeDialog"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_city"
+            android:textSize="@dimen/dialog_text_size_big"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/add_dialog_margin_top"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/city_name_et_height"
+            android:id="@+id/newCityName"
+            android:background="@drawable/city_name_edit_text"
+            android:hint="@string/newCityHint"
+            android:paddingStart="15dp"
+            android:layout_marginTop="@dimen/add_button_margin"
+            android:textSize="@dimen/dialog_text_size_small"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_new_city_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/add_button_height"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/add_button_margin"
+            android:text="Add"
+            android:textSize="@dimen/dialog_text_size_small"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/add_button"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

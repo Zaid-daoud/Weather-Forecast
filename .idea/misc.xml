@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/WeatherForecast/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.240625" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/drawable/ic_add.xml" value="0.5" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/drawable/ic_launcher_background.xml" value="0.240625" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/drawable/ic_refresh.xml" value="0.13541666666666666" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/activity_city_page.xml" value="0.5" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/activity_main.xml" value="0.5" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/add_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/city_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/more_details_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/remove_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/temp_forecast_body.xml" value="0.67" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-hdpi/today_temp_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-land/activity_city_page.xml" value="0.1900352733686067" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-land/activity_main.xml" value="0.17" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-land/city_list_item.xml" value="0.1900352733686067" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/activity_city_page.xml" value="0.5" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/activity_main.xml" value="0.5" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/add_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/city_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/more_details_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/remove_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/temp_forecast_body.xml" value="0.9" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-mdpi/today_temp_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-v28/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/activity_city_page.xml" value="0.33" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/activity_main.xml" value="0.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/add_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/city_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/more_details_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/remove_city_dialog.xml" value="0.33671875" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/temp_forecast_body.xml" value="0.33" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xhdpi/today_temp_body.xml" value="0.33671875" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/activity_city_page.xml" value="0.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/add_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/city_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/more_details_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/remove_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/temp_forecast_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxhdpi/today_temp_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/activity_city_page.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/activity_main.xml" value="0.18" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/add_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/city_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/more_details_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/remove_city_dialog.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/temp_forecast_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout-xxxhdpi/today_temp_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/activity_city_page.xml" value="0.67" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/activity_main.xml" value="1.0" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/add_city_dialog.xml" value="0.75" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/city_list_item.xml" value="1.0" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/more_details_dialog.xml" value="0.9" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/remove_city_dialog.xml" value="0.9" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/settings_dialog.xml" value="0.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/temp_forecast_body.xml" value="1.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/today_temo_body.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/today_temp_body.xml" value="1.1" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/layout/weather_details.xml" value="0.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/menu/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/menu/delete_all.xml" value="0.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/menu/options.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/menu/refresh.xml" value="0.22447916666666667" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/menu/toolbar.xml" value="0.25" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.240625" />
+        <entry key="..\:/WeatherForecast/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.240625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
