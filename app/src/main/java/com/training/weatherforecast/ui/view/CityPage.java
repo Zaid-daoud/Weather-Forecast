@@ -43,7 +43,6 @@ public class CityPage extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_city_page);
         String cityName = getIntent().getStringExtra("cityName");
         URL = "http://api.weatherapi.com/v1/forecast.json?key=ac79065e5402474ca05163838212109&q="+ cityName +"&days=6&aqi=no&alerts=no";
-        binding.toolBar.setTitle(cityName);
         weatherViewModel = new ViewModelProvider(this).get(WeatherViewModel.class);
         showWeatherInfo(URL);
 
@@ -67,6 +66,7 @@ public class CityPage extends AppCompatActivity {
             @Override
             public void setJsonDataResponse(JSONObject response) {
                 try {
+                    binding.toolBar.setTitle(response.getJSONObject("location").getString("name"));
                     int current = response.getJSONObject("current").getInt("is_day");
                     if(current == 1){
                         binding.background.setBackgroundResource(R.drawable.day_background);
@@ -77,12 +77,14 @@ public class CityPage extends AppCompatActivity {
                     showForecasts(response.getJSONObject("forecast"));
                 } catch (JSONException e) {
                     Toast.makeText(CityPage.this,e.getMessage(),Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }
 
             @Override
             public void setVolleyError(VolleyError error) {
-                Toast.makeText(CityPage.this,"Something went wrong .. please check the name of the city",Toast.LENGTH_SHORT).show();
+                Toast.makeText(CityPage.this,"No matching location found",Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }
